@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Diabetes Analysis</title>
+</head>
+<style>
+    div {
+        display: block;
+        text-align: center;
+      }
+    </style>
+<body style="background-color:powderblue;" >
+   
+  <!--img src="C:\Users\Nupur sarkar\Downloads\AB.jpg"  width="500" height="333"--> 
+  <div>
+    <form  style="border:Blue; border-width:5px; border-style:solid;" method ="post" action="/predict">
+        <h2> Check below if you have Diabetes ?? </h2>
+        <input type="number"  name="preg" placeholder="preg"> <br> <br>
+        <input type="number"  name="plas" placeholder="plas"> <br> <br>
+        <input type="number"  name="pres" placeholder="pres"> <br> <br>
+        <input type="number"  name="skin" placeholder="skin"> <br> <br>
+        <input type="number"  name="test" placeholder="test"> <br> <br>
+        <input type="number"  name="mass" placeholder="mass"> <br> <br>
+        <input type="number"  name="predi" placeholder="predi"><br><br>
+        <input type="number"  name="age" placeholder="age"><br><br>
+        <button> submit </button>
+   
+    <h1 style="border:Blue; border-width:5px; border-style:solid;">{{data}}</h1>
+</div>
+</body>
+</html>
